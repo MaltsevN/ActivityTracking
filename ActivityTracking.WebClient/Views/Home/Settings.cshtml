@@ -6,21 +6,11 @@
 
 <h2>@ViewBag.Title</h2>
 
-<table>
-    <thead>
-        <tr>
-            <th>Name</th>
-            <th>Time</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var group in Model)
-        {
-            <tr>
-                <td>
-                    <div>@Html.DisplayFor(modelUser => group.Name)</div>
-                </td>
-            </tr>
-        }
-    </tbody>
-</table>
+@foreach (var group in Model)
+{
+    <tr>
+        <td>
+            <div>@Html.DisplayFor(modelUser => group.Name)</div>
+        </td>
+    </tr>
+}
